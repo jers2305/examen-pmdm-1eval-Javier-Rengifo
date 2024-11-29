@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.examJavier.ExamenPMDM.R;
 import com.examJavier.ExamenPMDM.fragment1;
+import com.examJavier.ExamenPMDM.fragment3;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -26,11 +27,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         mContext = context;
     }
 
-  /*  @Override
-    public Fragment getItem(int position) {
-
-        return PlaceholderFragment.newInstance(position + 1);
-    }*/
 
     @Nullable
     @Override
@@ -45,7 +41,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 return PlaceholderFragment.newInstance(position + 1);
             case 2:
-                return PlaceholderFragment.newInstance(position + 1);
+                return new fragment3();
             default:
                 return null;
         }
