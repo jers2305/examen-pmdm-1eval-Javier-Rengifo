@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.examJavier.ExamenPMDM.R;
+import com.examJavier.ExamenPMDM.fragment1;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -40,7 +41,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return PlaceholderFragment.newInstance(position + 1);
+                return new fragment1();
             case 1:
                 return PlaceholderFragment.newInstance(position + 1);
             case 2:
